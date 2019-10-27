@@ -23,7 +23,7 @@ def create_project_hash
   :description => project.css("p.bbcard_blurb").text,
   
   #add location
-  
+  project.css("ul.project-meta span.location-name").text,
   # return the projects hash
   projects
   # projects: kickstarter.css("li.project.grid_4")
